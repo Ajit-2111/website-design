@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAWAT</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <button onclick="topFunction()" id="scrollToTop" title="Go to top">
+      <i style="font-size: 24px" class="fa">&#xf062;</i>
+    </button>
+    <div id="topContactLinks">
+      <div id="topcontactinfo">
+        <i class="material-icons">&#xe0e1;</i>&nbsp;&nbsp;&nbsp;
+        <span>Email:Info@Restaurant.com</span
+        >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i style="font-size: 24px" class="fa">&#xf095;</i>&nbsp;&nbsp;&nbsp;
+        <span>Telephone: +1 800 234 5678</span>
+      </div>
+      <div class="socialLinksandbook">
+        <i style="font-size: 24px" class="fa">&#xf09a;</i>
+        <i style="font-size: 24px" class="fa">&#xf099;</i>
+        <i style="font-size: 24px" class="fa">&#xf17d;</i>
+        <i style="font-size: 24px" class="fa">&#xf1b4;</i>
+        <i style="font-size: 24px" class="fa">&#xf09e;</i>
+        <button>BOOK A TABLE</button>
+      </div>
+      <div id="navbar">
+        <img
+          src="main_logo.png"
+          alt=""
+          id="navbarLogo"
+          style="width: 150px; height: 50px"
+        />
+        <span id="navbarQuickLinks">
+          <a class="activelink navbarlink home" href="#home">HOME</a>
+          <a class="navbarlink about" href="#about">ABOUT</a>
+          <a class="navbarlink offer" href="#offer">OFFER</a>
+          <a class="navbarlink menu" href="#menu">MENU</a>
+          <a class="navbarlink team" href="#team">TEAM</a>
+          <a class="navbarlink blog" href="#blog">BLOG</a>
+          <a class="navbarlink gallery" href="#gallery">GALLARY</a>
+          <a class="navbarlink contact" href="#contact">CONTACT</a>
+          <a class="navbarlink" href="javascript:void(0)"
+            ><i style="font-size: 24px" class="fa">&#xf002;</i></a
+          >
+        </span>
+      </div>
+    </div>
+    <section id="home">
+      <div class="slideshow-container zig-zag-container">
+        <div class="Slides fading">
+          <div class="content">
+            <h1 class="title">Welcome To</h1>
+            <h3 class="subHeading1"><b>DAWAT</b> CAFE AND RESTAURANT</h3>
+            <br />
+            <button>RESERVATION NOW</button>
+          </div>
+          <span class="dotOverlay">
+            <img src="promo_slide_1.jpg" style="width: 100%"
+          /></span>
+        </div>
+
+        <div class="Slides fading">
+          <div class="content">
+            <h1 class="title">Our Menus</h1>
+            <h3 class="subHeading1">SEE WHAT'S <b>NEW</b> TODAY</h3>
+            <br />
+            <button>TODAYS MENU</button>
+          </div>
+          <span class="dotOverlay">
+            <img src="promo_slide_2.jpg" style="width: 100%"
+          /></span>
+        </div>
+
+        <div class="Slides fading">
+          <div class="content">
+            <h1 class="title">Get Ready</h1>
+            <h3 class="subHeading1">TO <b>JOIN</b> WITH US</h3>
+            <br />
+            <button>BOOK A TABLE</button>
+          </div>
+          <span class="dotOverlay">
+            <img src="promo_slide_3.jpg" style="width: 100%"
+          /></span>
+        </div>
+
+        <a class="prev" onclick="imgSlide(slideIndex--)">&#10094;</a>
+        <a class="next" onclick="plusSlides(+1)">&#10095;</a>
+
+        <div id="dotContainer" style="text-align: center">
+          <span class="dot" onclick="currentSlide(slideIndex = 0)"></span>
+          <span class="dot" onclick="currentSlide(slideIndex = 1)"></span>
+          <span class="dot" onclick="currentSlide(slideIndex = 2)"></span>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="zig-zag-container">
+      <div id="about-us">
+        <div class="content">
+          <h1 class="title">Our Story</h1>
+          <br />
+          <div id="aboutdetails">
+            <section>
+              <span>L</span>orem ipsum dolor sit amet, consectetur adipisicing
+              elit. Placeat adipisci, ad ipsum maiores et dolor vitae quia atque
+              cupiditate perspiciatis pariatur. Beatae blanditiis fugiat
+              perferendis corporis voluptates commodi sapiente sint omnis
+              doloremque distinctio impedit cupiditate, libero iste eum maxime,
+              quos error qui molestiae magni facilis soluta asperiores. Labore,
+              veniam. Incidunt.
+            </section>
+            <section>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat
+              adipisci, ad ipsum maiores et dolor vitae quia atque cupiditate
+              perspiciatis pariatur. Beatae blanditiis fugiat perferendis
+              corporis voluptates commodi sapiente sint omnis doloremque
+              distinctio impedit cupiditate, libero iste eum maxime, quos error
+              qui molestiae magni facilis soluta asperiores. Labore, veniam.
+              Incidunt.
+            </section>
+          </div>
+          <img
+            src="about_sign.png"
+            alt="signature"
+            style="width: 150px; height: 50px; padding-left: 220px"
+          />
+        </div>
+        <img src="our story background.png" alt="Our Story" />
+      </div>
+    </section>
+
+    <section id="offer" class="zig-zag-container">
+      <div>
+        <div class="content">
+          <div class="offerslider">
+            <div class="offerslidescontainer">
+              <div id="slide-1" class="offerSlide">
+                <div class="offerImg">
+                  <img src="promo_slide_1.jpg" alt="" />
+                  <div class="offerText">
+                    <h3>40% off for 9" - 12" pizza -Wed, Thu, Friday Only</h3>
+                    <p>
+                      Pizza 12 inch + 1 side dish + 1.5L Coke Bottle only from
+                      290,000
+                    </p>
+                    <button>ORDER NOW</button>
+                  </div>
+                </div>
+              </div>
+              <div id="slide-2" class="offerSlide">
+                <div class="offerImg">
+                  <img src="promo_slide_2.jpg" alt="" />
+                  <div class="offerText">
+                    <h3>40% off for 9" - 12" pizza -Wed, Thu, Friday Only</h3>
+                    <p>
+                      Pizza 12 inch + 1 side dish + 1.5L Coke Bottle only from
+                      290,000
+                    </p>
+                    <button>ORDER NOW</button>
+                  </div>
+                </div>
+              </div>
+              <div id="slide-3" class="offerSlide">
+                <div class="offerImg">
+                  <img src="promo_slide_3.jpg" alt="" />
+                  <div class="offerText">
+                    <h3>40% off for 9" - 12" pizza -Wed, Thu, Friday Only</h3>
+                    <p>
+                      Pizza 12 inch + 1 side dish + 1.5L Coke Bottle only from
+                      290,000
+                    </p>
+                    <button>ORDER NOW</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="dotContainer" style="text-align: center">
+              <span class="dot"><a href="#slide-1">&nbsp;</a></span>
+              <span class="dot"><a href="#slide-2">&nbsp;</a></span>
+              <span class="dot"><a href="#slide-3">&nbsp;</a></span>
+            </div>
+          </div>
+        </div>
+        <span class="dotOverlay">
+          <img src="promo_slide_1.jpg" style="width: 100%"
+        /></span>
+      </div>
+    </section>
+    <section id="menu" class="zig-zag-container">
+      <div>
+        <div class="content">
+          <h1 class="title">Today's Menu</h1>
+          <br />
+          <span
+            ><img src="red seperator.png" style="width: 200px; height: 34px"
+          /></span>
+          <div id="menuBtnContainer">
+            <button class="btn menuActive" onclick="filterSelection('ALL')">
+              ALL
+            </button>
+            <button class="btn" onclick="filterSelection('BREAKFAST')">
+              BREAKFAST
+            </button>
+            <button class="btn" onclick="filterSelection('LUNCH')">
+              LUNCH
+            </button>
+            <button class="btn" onclick="filterSelection('DINNER')">
+              DINNER
+            </button>
+            <button class="btn" onclick="filterSelection('COFFE')">
+              COFFE
+            </button>
+            <button class="btn" onclick="filterSelection('SNACKS')">
+              SNACKS
+            </button>
+          </div>
+
+          <div id="menuContainer">
+            <div class="filterDiv BREAKFAST SNACKS COFFE">
+              <img src="menu_1.jpg" alt="" />
+              <table>
+                <caption>
+                  Cupcake Recipes
+                </caption>
+                <tr>
+                  <td>- Juice Fruit</td>
+                  <td>- Chicken</td>
+                  <td>- Cherry</td>
+                </tr>
+                <tr>
+                  <td>- Vegetable</td>
+                  <td>- Milk</td>
+                  <td>- Potato</td>
+                </tr>
+                <tr>
+                  <td>- Tomato</td>
+                  <td>- Chilli</td>
+                  <td>- Sesame</td>
+                </tr>
+              </table>
+              <p class="price">$20.22</p>
+            </div>
+            <div class="filterDiv DINNER COFFE LUNCH">
+              <img src="menu_2.jpg" alt="" />
+              <table>
+                <caption>
+                  Cupcake Recipes
+                </caption>
+                <tr>
+                  <td>- Juice Fruit</td>
+                  <td>- Chicken</td>
+                  <td>- Cherry</td>
+                </tr>
+                <tr>
+                  <td>- Vegetable</td>
+                  <td>- Milk</td>
+                  <td>- Potato</td>
+                </tr>
+                <tr>
+                  <td>- Tomato</td>
+                  <td>- Chilli</td>
+                  <td>- Sesame</td>
+                </tr>
+              </table>
+              <p class="price">$17.82</p>
+            </div>
+            <div class="filterDiv LUNCH BREAKFAST DINNER">
+              <img src="menu_3.jpg" alt="" />
+              <table>
+                <caption>
+                  Cupcake Recipes
+                </caption>
+                <tr>
+                  <td>- Juice Fruit</td>
+                  <td>- Chicken</td>
+                  <td>- Cherry</td>
+                </tr>
+                <tr>
+                  <td>- Vegetable</td>
+                  <td>- Milk</td>
+                  <td>- Potato</td>
+                </tr>
+                <tr>
+                  <td>- Tomato</td>
+                  <td>- Chilli</td>
+                  <td>- Sesame</td>
+                </tr>
+              </table>
+              <p class="price">$24.40</p>
+            </div>
+            <div class="filterDiv COFFE SNACKS LUNCH">
+              <img src="menu_4.jpg" alt="" />
+              <table>
+                <caption>
+                  Cupcake Recipes
+                </caption>
+                <tr>
+                  <td>- Juice Fruit</td>
+                  <td>- Chicken</td>
+                  <td>- Cherry</td>
+                </tr>
+                <tr>
+                  <td>- Vegetable</td>
+                  <td>- Milk</td>
+                  <td>- Potato</td>
+                </tr>
+                <tr>
+                  <td>- Tomato</td>
+                  <td>- Chilli</td>
+                  <td>- Sesame</td>
+                </tr>
+              </table>
+              <p class="price">$22.00</p>
+            </div>
+            <div class="filterDiv SNACKS BREAKFAST">
+              <img src="menu_5.jpg" alt="" />
+              <table>
+                <caption>
+                  Cupcake Recipes
+                </caption>
+                <tr>
+                  <td>- Juice Fruit</td>
+                  <td>- Chicken</td>
+                  <td>- Cherry</td>
+                </tr>
+                <tr>
+                  <td>- Vegetable</td>
+                  <td>- Milk</td>
+                  <td>- Potato</td>
+                </tr>
+                <tr>
+                  <td>- Tomato</td>
+                  <td>- Chilli</td>
+                  <td>- Sesame</td>
+                </tr>
+              </table>
+              <p class="price">$25.22</p>
+            </div>
+            <div class="filterDiv DINNER LUNCH">
+              <img src="menu_6.jpg" alt="" />
+              <table>
+                <caption>
+                  Cupcake Recipes
+                </caption>
+                <tr>
+                  <td>- Juice Fruit</td>
+                  <td>- Chicken</td>
+                  <td>- Cherry</td>
+                </tr>
+                <tr>
+                  <td>- Vegetable</td>
+                  <td>- Milk</td>
+                  <td>- Potato</td>
+                </tr>
+                <tr>
+                  <td>- Tomato</td>
+                  <td>- Chilli</td>
+                  <td>- Sesame</td>
+                </tr>
+              </table>
+              <p class="price">$29.22</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="bookTable" class="zig-zag-container zig-zag-containerBefore">
+      <div>
+        <div class="content">
+          <h1 class="subHeading1">BOOK A TABLE NOW</h1>
+          <br />
+          <button>BOOK NOW</button>
+        </div>
+        <span class="dotOverlay">
+          <img src="promo_slide_1.jpg" style="width: 100%"
+        /></span>
+      </div>
+    </section>
+    <section id="team" class="zig-zag-container">
+      <div>
+        <div class="content">
+          <h1 class="title">Our Chefs</h1>
+          <br />
+          <span
+            ><img
+              src="red seperator.png"
+              style="width: 200px; height: 34px" /></span
+          ><br />
+          <div id="teamInfo">
+            <div class="chefCard">
+              <div class="followChef">
+                <i style="font-size: 24px" class="fa">&#xf09a;</i>
+                <i style="font-size: 24px" class="fa">&#xf099;</i>
+                <i style="font-size: 24px" class="fa">&#xf17d;</i>
+                <i style="font-size: 24px" class="fa">&#xf1b4;</i>
+                <i style="font-size: 24px" class="fa">&#xf09e;</i>
+              </div>
+              <img src="team-1.jpg" alt="Mark Angelila" />
+
+              <h3>Mark Angelila</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem, sequi!
+              </p>
+            </div>
+
+            <div class="chefCard">
+              <div class="followChef">
+                <i style="font-size: 24px" class="fa">&#xf09a;</i>
+                <i style="font-size: 24px" class="fa">&#xf099;</i>
+                <i style="font-size: 24px" class="fa">&#xf17d;</i>
+                <i style="font-size: 24px" class="fa">&#xf1b4;</i>
+                <i style="font-size: 24px" class="fa">&#xf09e;</i>
+              </div>
+              <img src="team-2.jpg" alt="Angel Meskat" />
+              <h3>Angel Meskat</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem, sequi!
+              </p>
+            </div>
+            <div class="chefCard">
+              <div class="followChef">
+                <i style="font-size: 24px" class="fa">&#xf09a;</i>
+                <i style="font-size: 24px" class="fa">&#xf099;</i>
+                <i style="font-size: 24px" class="fa">&#xf17d;</i>
+                <i style="font-size: 24px" class="fa">&#xf1b4;</i>
+                <i style="font-size: 24px" class="fa">&#xf09e;</i>
+              </div>
+              <img src="team-3.jpg" alt="Jon Doe" />
+              <h3>Jon Doe</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem, sequi!
+              </p>
+            </div>
+            <div class="chefCard">
+              <div class="followChef">
+                <i style="font-size: 24px" class="fa">&#xf09a;</i>
+                <i style="font-size: 24px" class="fa">&#xf099;</i>
+                <i style="font-size: 24px" class="fa">&#xf17d;</i>
+                <i style="font-size: 24px" class="fa">&#xf1b4;</i>
+                <i style="font-size: 24px" class="fa">&#xf09e;</i>
+              </div>
+              <img src="team-4.jpg" alt="Angel Di Maria" />
+              <h3>Angel De Maria</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem, sequi!
+              </p>
+            </div>
+            <div class="chefCard">
+              <div class="followChef">
+                <i style="font-size: 24px" class="fa">&#xf09a;</i>
+                <i style="font-size: 24px" class="fa">&#xf099;</i>
+                <i style="font-size: 24px" class="fa">&#xf17d;</i>
+                <i style="font-size: 24px" class="fa">&#xf1b4;</i>
+                <i style="font-size: 24px" class="fa">&#xf09e;</i>
+              </div>
+              <img src="team-5.jpg" alt="Park Ji Sung" />
+              <h3>Park Ji Sung</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem, sequi!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="blog" class="zig-zag-container zig-zag-containerBefore">
+      <div>
+        <div class="content">
+          <h1 class="title">Latest News</h1>
+          <br />
+          <span
+            ><img src="red seperator.png" style="width: 200px; height: 34px"
+          /></span>
+          <section class="scrollable-section">
+            <button
+              id="slideLeft"
+              class="scroll-button"
+              onclick="buttonLeft('.scrollable-div')"
+              style="padding: 10px 20px"
+            >
+              &#10094;
+            </button>
+            <div class="scrollable-div">
+              <div
+                class="scrollable-div-item card"
+                onclick="document.location='html-course-1-homepage.html'"
+              >
+                <img src="blog-1.jpg" alt="HTML Logo" style="width: 100%" />
+                <h4><b>Restaurant welcome day meetup</b></h4>
+                <hr />
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Deserunt accusamus non dicta? Non, voluptatem maiores. Maiores
+                  tenetur nostrum reprehenderit iste accusamus tempore
+                  voluptates repellat laudantium!
+                </p>
+                <p class="cardFooter">
+                  <span>12 January 2022 - 5 comments</span>
+                </p>
+              </div>
+              <div
+                class="scrollable-div-item card"
+                onclick="document.location='css-course-1-homepage.html'"
+              >
+                <img src="blog-2.jpg" alt="CSS Logo" style="width: 100%" />
+                <h4><b>Recieved first day first reservation</b></h4>
+                <hr />
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Deserunt accusamus non dicta? Non, voluptatem maiores. Maiores
+                  tenetur nostrum reprehenderit iste accusamus tempore
+                  voluptates repellat laudantium!
+                </p>
+                <p class="cardFooter">
+                  <span>12 January 2022 - 5 comments</span>
+                </p>
+              </div>
+              <div
+                class="scrollable-div-item card"
+                onclick="document.location='javascript-course-1-homepage.html'"
+              >
+                <img
+                  src="blog-3.jpg"
+                  alt="JavaScript Logo"
+                  style="width: 100%"
+                />
+                <h4><b>How to get your home delivery ?</b></h4>
+                <hr />
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Deserunt accusamus non dicta? Non, voluptatem maiores. Maiores
+                  tenetur nostrum reprehenderit iste accusamus tempore
+                  voluptates repellat laudantium!
+                </p>
+                <p class="cardFooter">
+                  <span>12 January 2022 - 5 comments</span>
+                </p>
+              </div>
+              <div
+                class="scrollable-div-item card"
+                onclick="document.location='javascript-course-1-homepage.html'"
+              >
+                <img
+                  src="blog-1.jpg"
+                  alt="JavaScript Logo"
+                  style="width: 100%"
+                />
+                <h4><b>Restaurant welcome day meetup</b></h4>
+                <hr />
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Deserunt accusamus non dicta? Non, voluptatem maiores. Maiores
+                  tenetur nostrum reprehenderit iste accusamus tempore
+                  voluptates repellat laudantium!
+                </p>
+                <p class="cardFooter">
+                  <span>12 January 2022 - 5 comments</span>
+                </p>
+              </div>
+              <div
+                class="scrollable-div-item card"
+                onclick="document.location='javascript-course-1-homepage.html'"
+              >
+                <img
+                  src="blog-2.jpg"
+                  alt="JavaScript Logo"
+                  style="width: 100%"
+                />
+                <h4><b>Recieved first day first reservation</b></h4>
+                <hr />
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Deserunt accusamus non dicta? Non, voluptatem maiores. Maiores
+                  tenetur nostrum reprehenderit iste accusamus tempore
+                  voluptates repellat laudantium!
+                </p>
+                <p class="cardFooter">
+                  <span>12 January 2022 - 5 comments</span>
+                </p>
+              </div>
+              <div
+                class="scrollable-div-item card"
+                onclick="document.location='javascript-course-1-homepage.html'"
+              >
+                <img
+                  src="blog-3.jpg"
+                  alt="JavaScript Logo"
+                  style="width: 100%"
+                />
+                <h4><b>How to get your home delivery ?</b></h4>
+                <hr />
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Deserunt accusamus non dicta? Non, voluptatem maiores. Maiores
+                  tenetur nostrum reprehenderit iste accusamus tempore
+                  voluptates repellat laudantium!
+                </p>
+                <p class="cardFooter">
+                  <span>12 January 2022 - 5 comments</span>
+                </p>
+              </div>
+            </div>
+            <button
+              id="slideRight"
+              class="scroll-button"
+              onclick="buttonRight('.scrollable-div')"
+              style="padding: 10px 20px"
+            >
+              &#10095;
+            </button>
+          </section>
+        </div>
+        <span class="dotOverlay">
+          <img src="promo_slide_2.jpg" style="width: 100%"
+        /></span>
+      </div>
+    </section>
+    <section id="gallery" class="zig-zag-container">
+      <div>
+        <div class="content">
+          <h1 class="title">Gallery</h1>
+          <br />
+          <span
+            ><img src="red seperator.png" style="width: 200px; height: 34px"
+          /></span>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="zig-zag-containerBefore">
+      <div>
+        <div class="content">
+          <span
+            ><img
+              src="main_logo.png"
+              alt=""
+              id="navbarLogo"
+              style="width: 150px; height: 50px"
+          /></span>
+          <br />
+          <p>
+            20, Floor, Wueenslad, Victoria Building, 60 California Street
+            California USA
+          </p>
+          <br />
+          <p>
+            <span><a href="#" class="footerLink">hello@dawat.com</a></span>
+          </p>
+          <br />
+          <p>
+            <span><a href="#" class="footerLink">+88 000 0000 1111</a></span>
+          </p>
+          <br />
+          <div class="footerSocialLinks">
+            <i style="font-size: 24px" class="fa">&#xf09a;</i>
+            <i style="font-size: 24px" class="fa">&#xf099;</i>
+            <i style="font-size: 24px" class="fa">&#xf17d;</i>
+            <i style="font-size: 24px" class="fa">&#xf1b4;</i>
+            <i style="font-size: 24px" class="fa">&#xf09e;</i>
+            <i style="font-size: 24px" class="fa">&#xf0d2;</i>
+            <i style="font-size: 24px" class="fa">&#xf0d5;</i>
+            <i style="font-size: 24px" class="fa">&#xf17e;</i>
+          </div>
+          <br />
+          <div id="footerLegal">
+            <section style="float: left">
+              <span><a href="#" class="footerLink">Terms of Use</a></span>
+              <span><a href="#" class="footerLink">Privacy Policy</a></span>
+              <span><a href="#" class="footerLink">Site Map</a></span>
+              <span><a href="#" class="footerLink">Contact</a></span>
+            </section>
+            <section style="float: right">
+              <span
+                ><i style="font-size: 24px" class="fa">&#xf1f9;</i> 2020
+                <span><a href="#" class="footerLink">Dawat Restaurant</a></span>
+                All Rights Reserved</span
+              >
+            </section>
+          </div>
+        </div>
+        <span class="dotOverlay">
+          <img src="Footer background.png" style="width: 100%"
+        /></span>
+      </div>
+    </section>
+  </body>
+  <script src="index.js"></script>
+</html>

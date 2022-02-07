@@ -1,0 +1,678 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@100&family=PT+Sans+Narrow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: "Lato", sans-serif;
+  font-weight: bolder;
+  scroll-behavior: smooth;
+}
+#topContactLinks {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  color: white;
+}
+#topcontactinfo,
+.socialLinksandbook {
+  padding: 8px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#topcontactinfo {
+  float: left;
+}
+.socialLinksandbook {
+  float: right;
+}
+.socialLinksandbook i,
+.socialLinksandbook button {
+  padding: 0px 10px;
+}
+.socialLinksandbook button {
+  padding: 8px 15px;
+  color: white;
+  background-color: orangered;
+  border: none;
+}
+.zig-zag-container {
+  position: relative;
+}
+.zig-zag-containerBefore:before {
+  background: linear-gradient(-135deg, #ffffff 8px, transparent 0),
+    linear-gradient(135deg, #ffffff 8px, transparent 0);
+  background-position: left-bottom;
+  background-repeat: repeat-x;
+  background-size: 16px 16px;
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 14px;
+}
+.zig-zag-container:after {
+  background: linear-gradient(-45deg, #ffffff 8px, transparent 0),
+    linear-gradient(45deg, #ffffff 8px, transparent 0);
+  background-position: left-bottom;
+  background-repeat: repeat-x;
+  background-size: 16px 16px;
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 14px;
+}
+.sticky:before {
+  background: linear-gradient(-45deg, transparent 16px, #ffffff 0),
+    linear-gradient(45deg, transparent 16px, #ffffff 0);
+  background-repeat: repeat-x;
+  background-position: left bottom;
+  background-size: 16px 16px;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 32px;
+  position: fixed;
+  top: 53px;
+  left: 0px;
+}
+.dotOverlay:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0px;
+  background: rgba(85, 85, 85, 0.514);
+  background-image: radial-gradient(rgba(0, 0, 0, 0.486) 33%, transparent 23%);
+  background-size: 3px 3px;
+}
+.Slides {
+  display: none;
+}
+.dotOverlay img {
+  height: 600px;
+  bottom: 0;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  height: 600px;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+#dotContainer {
+  position: relative;
+  bottom: 50px;
+}
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fading {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 5s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next {
+    font-size: 11px;
+  }
+}
+#about-us {
+  height: 600px;
+  position: relative;
+  /* z-index: 2; */
+}
+#about-us img {
+  background: white;
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: rgba(128, 128, 128, 0);
+  width: 100%;
+  /* height: 60px; */
+  z-index: 2;
+  border-top: 1px solid white;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #cecece;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  height: 100%;
+}
+#navbar a:hover {
+  color: rgb(255, 80, 11);
+}
+
+#navbar a.activelink {
+  color: rgb(255, 80, 11);
+  border-top: 1px solid rgb(255, 80, 11);
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: black;
+  text-decoration: none;
+  z-index: 100;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+#navbarQuickLinks {
+  float: right;
+  display: flex;
+  align-items: baseline;
+  height: 60px;
+}
+#navbarLogo {
+  padding: 5px 100px 10px 100px;
+  z-index: 2;
+}
+#menu,
+#offer,
+#team,
+#blog,
+#contact {
+  height: 600px;
+  position: relative;
+}
+#bookTable,
+#gallery {
+  height: 300px;
+  overflow: hidden;
+}
+.content {
+  position: absolute;
+  top: 120px;
+  color: white;
+  z-index: 1;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.title {
+  font-family: "Dancing Script", cursive;
+  font-size: 100px;
+  animation: slide-down 2s;
+  position: relative;
+}
+@keyframes slide-down {
+  from {
+    opacity: 0.2;
+    top: -10px;
+  }
+
+  to {
+    opacity: 1;
+    top: 0px;
+  }
+}
+@keyframes slide-up {
+  from {
+    opacity: 0.2;
+    top: 10px;
+  }
+
+  to {
+    opacity: 1;
+    top: 0px;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0.2;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.subHeading1 {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 50px;
+  animation: fade-in 3s;
+}
+.content button {
+  animation: slide-up 2s;
+  position: relative;
+  padding: 10px 50px;
+  font-size: 20px;
+  background: rgba(228, 228, 228, 0);
+  color: white;
+  font-weight: 1000;
+  border: 1px solid white;
+  letter-spacing: 5px;
+}
+.content button:hover {
+  background-color: orangered;
+}
+
+#about-us .content,
+#gallery .content {
+  top: 50px;
+}
+#about-us .content img {
+  bottom: -90px;
+}
+#about-us .content .title,
+#gallery .content .title,
+#blog .content .title,
+#team .content .title,
+#menu .content .title {
+  color: orangered;
+  font-size: 80px;
+}
+#aboutdetails {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+}
+#aboutdetails section {
+  max-width: 500px;
+  text-align: left;
+}
+#aboutdetails section span {
+  float: left;
+  line-height: 85%;
+  width: 0.7em;
+  font-size: 400%;
+  font-family: georgia;
+}
+#bookTable button {
+  padding: 10px 50px;
+  font-size: 20px;
+  background: rgb(255, 255, 255);
+  color: orangered;
+  border: 1px solid white;
+  letter-spacing: 5px;
+}
+#bookTable button:hover {
+  color: white;
+  background-color: orangered;
+}
+.footerLink {
+  color: orangered;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+.footerSocialLinks {
+  color: white;
+}
+.footerSocialLinks i {
+  padding: 0px 10px;
+}
+#footerLegal {
+  box-sizing: border-box;
+  padding: 25px 15px;
+  position: relative;
+  width: 90vw;
+  height: 70px;
+  background: #7171715b;
+  bottom: -180px;
+  border-top: 1px solid white;
+}
+#footerLegal,
+#footerLegal a {
+  font-size: 20px;
+  font-weight: 999;
+}
+#blog .content,
+#team .content {
+  top: 30px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin: 5px 10px;
+  text-align: center;
+  width: 350px;
+  white-space: normal;
+  height: 500px;
+  background-color: white;
+  color: black;
+}
+#blog,
+#menu,
+#blog .dotOverlay img {
+  height: 1000px;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+}
+.card:hover h4 {
+  color: orangered;
+}
+.card h4 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.card hr {
+  width: 50px;
+  padding: 1px;
+  border: none;
+  margin: auto;
+  background: orangered;
+}
+.card p {
+  padding: 10px 5px;
+}
+.scrollable-section {
+  display: flex;
+  height: 550px;
+  max-width: 1100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.scrollable-section button {
+  background-color: orangered;
+  color: white;
+  border: none;
+}
+.scrollable-div {
+  width: 100%;
+  overflow-x: scroll;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  padding: 5px 10px 10px 10px;
+}
+
+.scrollable-div-item {
+  display: inline-block;
+  font-size: 15px;
+  font-family: arial;
+  cursor: pointer;
+}
+
+.scroll-button {
+  width: 20px;
+  height: 50px;
+}
+
+.scrollable-div::-webkit-scrollbar,
+.offerslidescontainer::-webkit-scrollbar {
+  width: 0px;
+}
+#teamInfo {
+  display: flex;
+  color: black;
+}
+.chefCard {
+  position: relative;
+  margin: 10px 5px;
+}
+.chefCard:hover {
+  opacity: 0.6;
+}
+.chefCard:hover .followChef {
+  color: rgb(133, 133, 133);
+  right: 15px;
+}
+.followChef {
+  position: absolute;
+  color: rgba(133, 133, 133, 0);
+  top: 10px;
+  right: -20px;
+  transition: all 1s;
+}
+.followChef i {
+  display: block;
+  padding: 5px;
+}
+i:hover {
+  color: orangered;
+}
+.filterDiv img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 10px solid rgb(190, 190, 190);
+  margin: 0px 10px;
+}
+.filterDiv {
+  color: black;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin: 2px;
+  width: 0;
+  height: 0;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+.filterDiv table tr td {
+  padding: 5px;
+  text-align: left;
+}
+#menuBtnContainer .btn {
+  border: 1px solid black;
+  outline: none;
+  font-size: 15px;
+  padding: 5px 8px;
+  background-color: #f1f1f1;
+  color: black;
+  cursor: pointer;
+}
+#menuContainer {
+  width: 1000px;
+  padding-top: 30px;
+}
+#menuBtnContainer .btn:hover {
+  background-color: orangered;
+  color: white;
+}
+
+#menuBtnContainer .btn.menuActive {
+  background-color: orangered;
+  color: white;
+  border: 1px solid orangered;
+}
+.price {
+  color: orangered;
+}
+caption {
+  font-size: 20px;
+  font-weight: 900;
+  text-align: left;
+}
+.show {
+  min-width: 450px;
+  min-height: 150px;
+  float: left;
+  text-align: center;
+  transition: all 0.3s linear;
+}
+
+.offerslider {
+  text-align: center;
+  overflow: hidden;
+}
+.offerslidescontainer {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+.offerslidescontainer > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  margin-right: 50px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0);
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.offerslider > a {
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: white;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+}
+.offerSlide {
+  display: flex;
+  height: 500px;
+  width: 1000px;
+}
+.offerImg > img {
+  height: 400px;
+  width: 800px;
+  position: relative;
+  left: -100px;
+}
+.offerText {
+  height: 200px;
+  width: 300px;
+  position: absolute;
+  background-color: #ffffff;
+  color: black;
+  right: 100px;
+  top: 30%;
+  text-align: left;
+}
+#offer .content {
+  width: 1000px;
+  top: 0;
+}
+.offerText h3 {
+  font-size: 25px;
+  font-weight: 900;
+  padding: 10px 5px;
+}
+.offerText p {
+  font-size: 15px;
+  font-weight: 900;
+  padding: 10px 5px;
+}
+.offerText button {
+  font-size: 15px;
+  font-weight: 900;
+  padding: 10px 5px;
+  color: black;
+  border: 1px solid orangered;
+  margin: 5px 10px;
+}
+.offerslider .dotContainer a {
+  text-decoration: none;
+  color: #717171;
+}
+#scrollToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#scrollToTop:hover {
+  background-color: #555;
+}
